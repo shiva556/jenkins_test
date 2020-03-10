@@ -1,0 +1,21 @@
+pipeline{
+  agent any{
+    stages{
+      stage('Source'){
+        steps{
+          echo 'Sorce Control Stage'
+          }
+        }
+        stage('Build'){
+          steps{
+            echo 'Build Stage'
+            }
+          }
+        stage('Package'){
+          steps{
+            echo 'Packaging Stage'
+            }
+          }
+      }
+  }
+}
