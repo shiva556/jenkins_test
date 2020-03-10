@@ -5,7 +5,7 @@ pipeline{
         steps{
           git branch: 'master',
           credentialsId: '123bdaf2-1c59-4f3c-8a9f-474dce279ef0',
-          url: 'http://tfs.agility.com:8080/tfs/DefaultCollection/FOCiSNexGen-SingleQuote'
+          url: 'giturl'
           }
         }
         stage('Build'){
